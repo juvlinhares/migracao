@@ -50,8 +50,7 @@ public class SaldoMigrationService {
                         int contador = contadorDeLinhas.getAndIncrement();
                         log.debug("Lendo a linha de saldos do csv: " + record);
 
-                        saldos.set(record.get());
-                        repository.saveAll(new Saldo(record));
+                        repository.save(new Saldo(record));
                         log.info("Linha salva: " + contador);
 
                     } catch (Exception e) {
