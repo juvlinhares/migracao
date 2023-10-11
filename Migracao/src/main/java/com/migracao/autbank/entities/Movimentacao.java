@@ -20,7 +20,7 @@ import java.text.SimpleDateFormat;
 public class Movimentacao {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "NROREGISTRO")
     private Integer nroregistro;
     @Column(name = "CODCOLIGADA")

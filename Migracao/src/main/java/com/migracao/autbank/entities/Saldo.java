@@ -19,7 +19,7 @@ import java.text.SimpleDateFormat;
 @Table(name = "RF_SALDOS")
 public class Saldo {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "NROREGISTRO")
     private Integer nroregistro;
 

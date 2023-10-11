@@ -20,9 +20,8 @@ import org.apache.commons.csv.CSVRecord;
 @Entity
 @Table(name = "RF_COND_RESGATE")
 public class CondResgate {
-
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Column(name = "NROREGISTRO")
 	private Integer nroregistro;
 	@Column(name = "CODCOLIGADA")
